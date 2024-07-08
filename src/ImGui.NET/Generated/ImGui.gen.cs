@@ -28352,5 +28352,10 @@ namespace ImGuiNET
             }
             return ret != 0;
         }
+        public static IntPtr* GetBuilderForFreeType()
+        {
+            IntPtr* ret = ImGuiNative.ImGuiFreeType_GetBuilderForFreeType();
+            return ret;
+        }
     }
 }
